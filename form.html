@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Turn</title>
+  </head>
+  <body>
+    <header>
+      <h1>Make Your Own</h1>
+      <!--
+        This navigation bar is on each page and allows the user to easily switch 
+        between pages and navigate the site.
+      -->
+      <nav>
+        <table>
+          <tr>
+            <a href="index.html">Homepage</a
+            >&nbsp;&nbsp;&nbsp;
+          </tr>
+          <tr>
+            <a href="course-start.html">Start Course</a
+            >&nbsp;&nbsp;&nbsp;
+          </tr>
+          <tr>
+            <a href="form.html">Your Turn</a>
+          </tr>
+        </table>
+        <br />
+        <hr />
+      </nav>
+    </header>
+
+    <main>
+      <br />
+      <br />
+      <p>Now with all that was said on the previous page let's see what you can make using your own imagination</p>
+      <br />
+
+      <form>
+        <!--
+          First section of the form talking about what real world physics is any
+          are in their universe.
+        -->
+        <fieldset>
+          <legend><strong>Real Universe Location and Information</strong></legend>
+          <br />
+          <label for="calendar"> If this takes place in the real world or universe when does it take place? </label>
+          <input type="date" name="calendar" id="real-world-calendar" />
+
+          <br />
+          <br />
+
+          <!--
+            This select is where does their story take place if it is in our universe
+            some generic areas of our observable universe to choose from.
+          -->
+          <label for="sections"> What Part of the Universe Does it Take Place? </label>
+          <select name="sections" id="universe-sections">
+            <optgroup label="Inside The Solar System">
+              <option value="solar-system">Solar System</option>
+            </optgroup>
+            <optgroup label="Outside The Solar System">
+              <option value="kuiper-belt">Kuiper Belt</option>
+              <option value="oot-cloud">Oot Cloud</option>
+              <option value="alpha-centari">Alpha Centauri</option>
+              <option value="perseus-arm">Perseus Arm</option>
+              <option value="milky-way-galaxy">Milky Way Galaxy</option>
+              <option value="andromeda-galaxy">Andromeda Galaxy</option>
+              <option value="nearby-galaxies">Nearby Galaxies</option>
+              <option value="cosmic-web">Cosmic Web</option>
+              <option value="cosmic-microwave-radiation">Cosmic Microwave Radiation</option>
+              <option value="big-bang-remnants">Big Bang Remnants</option>
+              <option value="further">Further?</option>
+            </optgroup>
+          </select>
+          <br />
+          <br />
+          <!--
+            A checkbox for if the physics are the same across to their universe.
+          -->
+          <label for="real">Does your universe have our physics?</label>
+          <input type="checkbox" name="real" id="realphysics" />
+
+          <br />
+          <br />
+          <!--
+            They can talk about what life that we currently know exists in their
+            space.
+          -->
+          <label for="life">Are there humans or other earthy life?</label>
+          <textarea name="life" id="reallife" rows="2" cols="25"></textarea>
+        </fieldset>
+        <!--
+          The second section of the form where they can input any other information
+          that they have about the physics life and setting that they have made up.
+        -->
+        <fieldset>
+          <legend><strong>Outside our reality</strong></legend>
+          <label for="othersetting">Any other ideas on <strong>Setting</strong>.</label>&nbsp;
+          <textarea name="othersetting" id="unrealsetting" rows="8" cols="40"></textarea>
+          <br />
+          <label for="otherphysics">Any other ideas on <strong>Physics</strong>.</label>
+          <textarea name="otherphysics" id="unrealphysics" rows="8" cols="40"></textarea>
+          <br />
+          <label for="otherlife">Any other ideas on <strong>Life</strong>.</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <textarea name="otherlife" id="unreallife" rows="8" cols="40"></textarea>
+        </fieldset>
+        <br />
+        <br />
+        <!--
+          Reset and submit buttons at the end separated for accessibility.
+        -->
+        <input type="reset" name="clearForm" id="clear" value="Clear" />
+        <br />
+        <br />
+        <br />
+        <input type="submit" name="submitButton" id="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>
